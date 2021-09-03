@@ -6,11 +6,19 @@
 
     <servlet>
         <servlet-name>first-servlet</servlet-name>
-        <servlet-class>lysenko.MainServlet</servlet-class>
-
+        <servlet-class>lysenko.FirstServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>second-servlet</servlet-name>
+        <servlet-class>lysenko.SecondServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>first-servlet</servlet-name>
-        <url-pattern>/my-servlet</url-pattern>
+        <url-pattern>/visits</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>second-servlet</servlet-name>
+        <url-pattern>/statistics</url-pattern>
     </servlet-mapping>
 </web-app>
